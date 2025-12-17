@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-import { type } from "os";
+import mongoose, { Mongoose } from "mongoose";
 
 const userSchema= new mongoose.Schema({
     name:{ type:String,required:true },
@@ -10,6 +9,7 @@ const userSchema= new mongoose.Schema({
     gender:{type:String,default:"Not Selected"},
     dob:{type:String,default:"Not Selected"},
     phone:{type:String,default:"000000000"},
+    posts:[{type:mongoose.Schema.Types.ObjectId,ref:"post"}]
 },{minimize:false})
 const userModel=mongoose.models.user || mongoose.model("user",userSchema);
 export default userModel;
