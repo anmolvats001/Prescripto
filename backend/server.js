@@ -12,8 +12,25 @@ const port =process.env.PORT || 4000;
 connectDb();
 connectCloudinary();
 //middlewares  dj2pt0ki6   lbEPz-2g5YWb-Vg-M2_L5en3S2I
+const cors = require("cors");
 
-app.use(cors());
+const allowedOrigins = [
+  "https://prescripto-1-9coo.onrender.com",
+  "https://prescripto-1-admin-2s6i.onrender.com",
+  "http://localhost:5173"
+];
+
+app.use(cors({
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS not allowed"));
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 //end point
