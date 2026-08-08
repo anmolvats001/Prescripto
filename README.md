@@ -16,7 +16,7 @@ Booking a doctor's appointment usually means separate flows for patients, doctor
 
 ## Live Demo
 
-`https://prescripto-1-9coo.onrender.com/`
+https://prescripto-1-9coo.onrender.com/
 
 ## Screenshots
 
