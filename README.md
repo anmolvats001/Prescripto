@@ -16,11 +16,15 @@ Booking a doctor's appointment usually means separate flows for patients, doctor
 
 ## Live Demo
 
-`<add live link here>`
+`https://prescripto-1-9coo.onrender.com/`
 
 ## Screenshots
 
 `<add screenshots of Patient, Doctor, and Admin dashboards here>`
+<img width="1869" height="968" alt="image" src="https://github.com/user-attachments/assets/a8a5b37d-16bb-448c-b026-b1d6d87a131d" />
+<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/52ab73d5-5ed0-44eb-ba7f-0e560f2220e9" />
+<img width="1820" height="911" alt="image" src="https://github.com/user-attachments/assets/28186986-6b73-41dd-ac6f-f5018b19d504" />
+
 
 ## Architecture
 
@@ -54,7 +58,7 @@ React Frontend (Material-UI, Redux, Context API)
 
 ```bash
 # Clone the repo
-git clone <repo-url>
+git clone https://github.com/anmolvats001/Prescripto.git
 cd prescripto
 
 # Backend setup
